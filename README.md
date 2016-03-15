@@ -1,4 +1,4 @@
-# Class_Rebar
+# Class Rebar
 
 ## Class for AutoHotkey Rebar custom controls
 
