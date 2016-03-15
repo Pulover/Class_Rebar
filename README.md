@@ -41,6 +41,8 @@ Styles can be applied to Gui command options, e.g.: Gui, Add, Custom, ClassReBar
 * CCS_NORESIZE      := 0x0004 - Allows resizing rebars.
 * CCS_VERT          := 0x0080 - Creates a vertical rebar.
 
+- - -
+
 ## Delete()
 Deletes a band from a rebar control.
 
