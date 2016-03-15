@@ -117,7 +117,7 @@ TRUE if successful, FALSE if there was a problem.
 ### Parameters
 * **hChild** - Handle to the control contained in the band, if any.
 * **Position** - 1-based index of the location where the band will be inserted. If you set this parameter to 0, the control will add the new band at the last location.
-* **Options:        Enter zero or more words, separated by space or tab, from the following list to set the band's initial styles: Break, FixedBmp, FixedSize, Hidden, HideTitle, NoGripper, NoVert, TopAlign, VariableHeight. The following styles are applied by default** - ChildEdge, GripperAlways (can be disabled with NoGripper), UseChevron (only valid if IdealSize is set).
+* **Options** - Enter zero or more words, separated by space or tab, from the following list to set the band's initial styles: Break, FixedBmp, FixedSize, Hidden, HideTitle, NoGripper, NoVert, TopAlign, VariableHeight. The following styles are applied by default** - ChildEdge, GripperAlways (can be disabled with NoGripper), UseChevron (only valid if IdealSize is set).
 * **ID** - Integer value that the control uses to identify this band. This parameter is required to retrieve and set layouts.
 * **Text** - The display text for the band.
 * **Size** - Length of the band, in pixels.
@@ -154,7 +154,7 @@ TRUE if successful, FALSE if there was a problem.
 
 ### Parameters
 * **Band** - 1-based index of a band to be modified.
-* **Property:       Enter one word from the following list to select the Property to be set** - Style, ID, Text, Size, Image, Background, MinWidth, MinHeight, IdealSize, Child (handle of control).
+* **Property** - Enter one word from the following list to select the Property to be set** - Style, ID, Text, Size, Image, Background, MinWidth, MinHeight, IdealSize, Child (handle of control).
 * **Value** - The value to be set in the selected Property. If Property is Style you can enter named values as in the InsertBand options, or an integer value.
 * **SetStyle** - Only valid if Property is Style. Determines whether to add or remove the styles.
 
@@ -216,7 +216,7 @@ Sets a layout of bands in the rebar control.
 TRUE if a valid layout was passed, or FALSE otherwise.
 
 ### Parameters
-* **Layout:         A string containing information about the current bands. String format is** - ID1,Size1,Style1|ID2,Size2,Style2|...
+* **Layout** - A string containing information about the current bands. String format is** - ID1,Size1,Style1|ID2,Size2,Style2|...
 
 ## SetMaxRows()
 Sets the maximum number of rows allowed in a rebar control. This method requires the OnNotify method to be implemented.
@@ -244,5 +244,5 @@ Toggles rebar's style.
 TRUE if a valid style is passed, or FALSE otherwise.
 
 ### Parameters
-* **Style:          Enter one or more words, separated by space or tab, from the following list to toggle toolbar's styles** - AutoSize, BandBorders, DblClkToggle, FixedOrder, RegisterDropdown, VarHeight, VerticalGripper. You may also enter an integer value to define the style.
+* **Style** - Enter one or more words, separated by space or tab, from the following list to toggle toolbar's styles** - AutoSize, BandBorders, DblClkToggle, FixedOrder, RegisterDropdown, VarHeight, VerticalGripper. You may also enter an integer value to define the style.
 
