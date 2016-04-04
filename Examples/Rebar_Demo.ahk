@@ -59,7 +59,7 @@ WM_NOTIFY := 0x4E
 OnMessage(WM_NOTIFY, "RB_Notify")
 return
 
-; This function monitors rebar's notifications. Only required for the Chevron.
+; This function monitors rebar's notifications. Only required for the Chevron and SetMaxRows.
 RB_Notify(wParam, lParam)
 {
     Global RB ; Function (or at least the Handles) must be global.
