@@ -18,6 +18,10 @@ Gui, Show, h200 w400
 rbSplitter := New Rebar(hSplitter)
 rbSplitter.InsertBand(hLeft, 0, "NoGripper", 10, "", 150, 0, "", 170, 80, 10)
 rbSplitter.InsertBand(hRight, 0, "", 20, "", 150, 0, "", 170, 80, 10)
+rbSplitter.SetMaxRows(1)
+
+WM_NOTIFY := 0x4E
+OnMessage(WM_NOTIFY, "RB_Notify")
 return
 
 GuiClose:
@@ -37,4 +41,10 @@ return
 RightPanelGuiSize:
 GuiControl, RightPanel:Move, TabC, % "W" (A_GuiWidth - 25) "H" (A_GuiHeight - 20)
 return
+
+RB_Notify(wParam, lParam)
+{
+    Global rbSplitter
+    rbSplitter.OnNotify(lParam)
+}
 
